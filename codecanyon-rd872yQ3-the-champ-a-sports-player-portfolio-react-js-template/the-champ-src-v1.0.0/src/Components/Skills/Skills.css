@@ -1,0 +1,185 @@
+.skillIcon svg {
+  font-size: 3rem;
+}
+.skillContainer {
+  background: #212529;
+}
+.subSkill {
+  color: white;
+  border-top-right-radius: 15px;
+  margin-top: -4rem;
+  padding: 3rem;
+  position: relative;
+  z-index: 5;
+}
+.skill {
+  background: url("../../utilities/images/background/home-skill-bg.png");
+  height: 60vh;
+  color: white;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+.skill:after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  background: #000000be;
+}
+.skill .container {
+  position: relative;
+  z-index: 10;
+}
+.singleSkill {
+  height: 190px;
+  width: 150px;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.skillImage {
+  height: 130px;
+  width: 130px;
+  overflow: hidden;
+  display: flex;
+  padding: 0.7rem;
+  align-items: center;
+  justify-content: center;
+}
+.skillText h4 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ffffff;
+  font-family: fantasy;
+}
+.goBottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  z-index: 5000;
+}
+.goBottomInner {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: goBottom 2s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes goBottom {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.3);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+  .subSkill {
+    padding: 0.6rem;
+}
+  .subSkill {
+    margin-top: 0;
+  }
+  .skillText h4 {
+    font-size: 3rem;
+  }
+  .profileContent span {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  .profileContent h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 58px;
+    margin: 1rem 0;
+    letter-spacing: 1px;
+  }
+  .backText h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    color: #e9e9e9;
+    transform: rotate(-90deg);
+  }
+  .backText {
+    height: 52%;
+  }
+  .buttonGroup {
+    display: flex;
+    align-items: center;
+  }
+  .buttonGroup button {
+    padding: 11px;
+  }
+}
+@media (min-width: 425px) and (max-width: 575px) {
+  .subSkill {
+    margin-top: 0;
+  }
+  .skillText h4 {
+    font-size: 3rem;
+  }
+  .profileContent span {
+    letter-spacing: 4px;
+  }
+  .backText h1 {
+    font-size: 8rem;
+    font-weight: 900;
+    color: #e9e9e9;
+    transform: rotate(-90deg);
+  }
+  .backText {
+    height: 52%;
+  }
+  .buttonGroup {
+    display: flex;
+    align-items: center;
+  }
+  .buttonGroup button {
+    padding: 11px;
+  }
+  .banner {
+    padding: 1rem 0 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .subSkill {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .subSkill {
+    margin-top: 0;
+  }
+  .skillText h4 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .subSkill {
+    margin-top: 0;
+  }
+  .skillText h4 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffffff;
+    font-family: fantasy;
+}
+}
+@media (min-width: 1440px) and (max-width: 2600px) {
+
+}

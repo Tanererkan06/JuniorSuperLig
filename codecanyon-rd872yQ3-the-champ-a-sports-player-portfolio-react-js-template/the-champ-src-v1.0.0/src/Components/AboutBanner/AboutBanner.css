@@ -1,0 +1,155 @@
+.about-banner{
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 3rem;
+  position: relative;
+  animation: background-Animation 10s linear infinite;
+}
+.about-banner:after{
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.617);
+  position: absolute;
+  z-index: 5;
+}
+.about-page-text{
+  color: white;
+  text-align: end;
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+  z-index: 10;
+}
+.about-banner-container{
+    height: 50vh;
+    width: 100%;  
+    overflow: hidden;
+}
+.about-page-text h1{
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 119px;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-family: "Poppins", sans-serif;
+}
+@keyframes background-Animation {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.03);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .about-banner-container {
+        height: 35vh;
+    }
+    .about-page-text {
+        color: white;
+        position: absolute;
+        bottom: 34%;
+        right: 12.5%;
+        z-index: 10;
+        width: 75%;
+        text-align: center;
+    }
+    .about-page-text h1 {
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: inherit;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: inherit;
+        font-family: "Poppins", sans-serif;
+    }
+  }
+  @media (min-width: 425px) and (max-width: 575px) {
+    .about-banner-container {
+      height: 40vh;
+  }
+    .about-page-text {
+      color: white;
+      position: absolute;
+      bottom: 34%;
+      right: 12.5%;
+      z-index: 10;
+      width: 75%;
+      text-align: center;
+  }
+    .about-page-text h1 {
+      font-size: 3.2rem;
+      font-weight: 300;
+      line-height: inherit;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: inherit;
+      font-family: "Poppins", sans-serif;
+  }
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .about-page-text {
+      color: white;
+      position: absolute;
+      bottom: 34%;
+      right: 12.5%;
+      z-index: 10;
+      width: 75%;
+      text-align: center;
+  }
+    .about-page-text h1 {
+      font-size: 3.2rem;
+      font-weight: 300;
+      line-height: inherit;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: inherit;
+      font-family: "Poppins", sans-serif;
+  }
+    .subSkill {
+      margin-top: 0;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .about-page-text h1 {
+      font-size: 5rem;
+      font-weight: 600;
+      line-height: 70px;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: inherit;
+      font-family: "Poppins", sans-serif;
+  }
+    .subSkill {
+      margin-top: 0;
+    }
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    .about-page-text h1 {
+      font-size: 7rem;
+      font-weight: 700;
+      line-height: 90px;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: inherit;
+      font-family: "Poppins", sans-serif;
+  }
+    .subSkill {
+      margin-top: 0;
+    }
+  }
+  @media (min-width: 1440px) and (max-width: 2600px) {
+
+  }
+  

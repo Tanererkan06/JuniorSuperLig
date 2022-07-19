@@ -1,0 +1,134 @@
+.headerItems{
+    width: 90%;
+}
+.header {
+    background: #292929;
+    color: white;
+    position: relative;
+    padding: 7px 0;
+}
+.header a{
+    color: white;
+}
+.logoContainer{
+    width: 20%;
+}
+.logo{
+    width: 70px;
+}
+.headerWrapper{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.headerMenuContainer{
+    width: 50%;
+    margin-left: auto;
+    transition: .4s;
+}
+.headerMenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.lg-none{
+    display: none;
+}
+.nav-bar span {
+    height: 4px;
+    width: 33px;
+    display: block;
+    background: white;
+    margin: 5px 0;
+    transition: .4s;
+}
+.cross span:first-child {
+    transform: rotate(45deg);
+    margin-bottom: 8px;
+}
+.cross span:last-child {
+    margin-top: -13px;
+    transform: rotate(-45deg);
+}
+.cross span:nth-child(2) {
+    display: none;
+}
+.toggle-side-bar{
+    top: 100% !important;
+}
+.navigation {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    z-index: 5555;
+    width: 50px;
+    right: 0;
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .headerWrapper {
+        align-items: center;
+    }
+    ul.headerMenu li {
+        margin-bottom: 11px;
+    }
+    ul.headerMenu li a {
+        font-size: 1.4rem;
+    }
+    .headerMenuContainer {
+        background: rgb(0, 0, 0);
+        position: absolute;
+        width: 100%;
+        top: -900%;
+        left: 0;
+        z-index: 5;
+        padding: 1rem;
+    }
+    .headerMenu {
+        display: block;
+    }
+    .lg-none{
+    display: block;
+}
+}
+@media (min-width: 425px) and (max-width: 575px) {
+    .headerWrapper {
+        align-items: center;
+    }
+    ul.headerMenu li {
+        margin-bottom: 11px;
+    }
+    ul.headerMenu li a {
+        font-size: 1.4rem;
+    }
+    .headerMenuContainer {
+        background: rgb(0, 0, 0);
+        position: absolute;
+        width: 100%;
+        top: -900%;
+        left: 0;
+        z-index: 5;
+        padding: 1rem;
+    }
+    .headerMenu {
+        display: block;
+    }
+    .lg-none{
+    display: block;
+}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .headerMenuContainer {
+        width: 80%;
+        margin-left: auto;
+        transition: .4s;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .headerMenuContainer {
+        width: 75%;
+    }
+}

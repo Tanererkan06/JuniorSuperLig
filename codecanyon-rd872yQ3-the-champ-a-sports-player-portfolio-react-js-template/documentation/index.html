@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>THE CHAMP</title>
+  </head>
+  <body>
+  
+    <main>
+      <div class="question">
+        <i class="far fa-question-circle"></i>
+      </div>
+      <section class="dashBoard">
+        <div class="container-fluid">
+          <div>
+            <div class="row">
+
+              <!-- nav bar only small screen start  -->
+              <div class="col-12 col-md-12 col-lg-3 col-xl-2 p-0 onlySmallScreen2">
+                <div class="onlySmallScreen">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="logo">
+                      <img src="./assets/img/logopng" alt="" class="w-100">
+                    </div>
+                    <div onclick="toggleNav('navBar','customPosition')" class="navBar">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- nav bar only small screen end  -->
+
+              <!-- side bar start  -->
+              <div class="col-12 col-md-12 col-lg-3 col-xl-2 py-2 px-3">
+                <div class="customPosition">
+                  <div class="profileNav">
+                    <div class="text-center text-dark profileImageContainer">
+                      <div class="profileNavImage">
+                          <img src="./assets/img/logo.png" alt="" class="h-100 w-100">
+                      </div>
+                    </div>
+                    <h5 class="m-0">Getting Started</h5>
+                    <div class="profileMenus">
+                      <ul class="ps-2">
+                        <li class="profileMenuItem activeLi">
+                          <a href="#introduction"
+                            >Introduction</a
+                          >
+                        </li>
+                        <li class="profileMenuItem">
+                          <a href="#installation"
+                            >Installation</a
+                          >
+                        </li>
+                        <li class="profileMenuItem">
+                          <a href="#deploy"
+                            >Deploy</a
+                          >
+                        </li>
+                        <li  class="profileMenuItem">
+                          <a href="#structure"
+                            >Project
+                            Structure</a
+                          >
+                        </li>
+                        <li  class="profileMenuItem">
+                          <a href="#component"
+                            >Components</a
+                          >
+                        </li>
+                        <li  class="profileMenuItem">
+                          <a target="_blank" href="https://i-Soccer-dark.netlify.app/"
+                            >Go Live</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="sideFooter">
+                      <div class="text-center">
+                        <span>All rights reserved by iGen solutions limited</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- side bar end  -->
+
+              <!-- main content start  -->             
+              <div class="col-12 col-md-12 col-lg-6 col-xl-8 py-2 middle border-0 border-start">
+                
+                <div class="profileContent">
+                  <div class="middle-header d-flex align-items-center justify-content-between">
+                      <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3ClightBlue d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#"><i class="fas fa-home me-2 text-dark"></i>Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Introduction</li>
+                        </ol>
+                      </nav>
+                      <div id="google_translate_element"></div>
+                  </div>
+                  <!-- introduction section start  -->
+                  <div id="introduction">
+                    <div class="mb-3">
+                      <h2 class="fw-bold">Project Intro</h2>
+                    </div>
+                    <p class="border-bottom pb-2">
+                      <span class="fs-4 text-primary fw-bold">THE CHAMP</span> is a
+                      <span> Player Sports Portfolio Template</span> build
+                      with latest technology.It is also contained with full
+                      frontend functionalities and appropriate logics.
+                      <span>THE CHAMP</span> is single page and
+                      suitable web application for making a lookrative portfolio.
+                    </p>
+
+
+                    <div>
+                      <div>
+                        <div data-bs-toggle="modal" data-bs-target="#exampleModal" class="lightGreen">
+                            <h5 class="m-0">Application code</h5>
+                            <span>React</span>
+                        </div>
+                      </div>
+                      <div>
+                        <div data-bs-toggle="modal" data-bs-target="#exampleModal2" class="lightGreen">
+                          <h5 class="m-0">Build Tools</h5>
+                          <span>npm / yarn</span>
+                        </div>
+                      </div>
+                      <div>
+                        <div  data-bs-toggle="modal" data-bs-target="#exampleModal3" class="lightGreen">
+                          <h5 class="m-0">Testing Tools</h5>
+                          <span>Enzyme,Mocha,Zest</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- introduction section end  -->
+
+                  <!-- technology section start  -->
+                  <div class="technology  py-5">
+                      <div class="mb-3">
+                        <h2 class="fw-bold">Technology Features</h2>
+                      </div>
+                      <p class="border-bottom pb-2">
+                        THE CHAMP is a single page application build with react and react dom.The technology for this app is very popular and @latest which is React,Node,Context Api etc.So that User will have comfort to browse.React technology provides not to load pages when we randomly visit another page.So that it tooks less time than any other application and gives a better performance to users.The more are descripted bellow. 
+                      </p>
+                        <div class="row">
+                          <div class="col-12 col-md-12 col-lg-3 col-xl-3">
+                            <div>
+                              <h5>Technology</h5>
+                              <ul class="p-0">
+                                <li>React-18 , React hooks</li>
+                                <li>React Router dom vesion-5</li>
+                                <li>React bootstrap</li>
+                                <li>Context Api Supported</li>
+                                <li>React Router Hashlink</li>
+                                <li>Media Query</li>
+                            </ul>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-3 col-xl-3">
+                            <div>
+                              <h5>Features</h5>
+                              <ul class="p-0">
+                                <li>Single page Web</li>
+                                <li>Attractive Design</li>
+                                <li>Sticky Nav Bar</li>
+                                <li>Off Canvas Menu</li>
+                                <li>Unique Design Pattern</li>
+                                <li>Animation and Keyframes</li>
+                            </ul>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <!-- technology section end  -->
+
+                  <!-- installation section start  -->                  
+                  <div id="installation" class=" py-5">
+                    <div class="mb-3">
+                      <h2 class="fw-bold">How to Install</h2>
+                    </div>
+                    <p class="border-bottom pb-2">
+                      Its easy to install Well, you can install this application with two ways. First one is - #With yarn and another is #with npm.
+                      First check node module folder in your project.If this project exists then simply open a terminal with administration mood.Make sure in which way you want to proceed.then follow the command given bellow.
+                    </p>
+                      <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Yarn</button>
+                          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">npm</button>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                          <ul class="p-3">
+                            <li>Download the project</a></li>
+                            <li>Open project through CMD administration mood or git bash</li>
+                            <li>Go to project folder</li>
+                            <li>install yarn globall <b>npm install --global yarn</b> </li>
+                            <li>Install yarn with <b>yarn install</b></li>
+                            <li>Run project with <b>yarn start</b> locally</li>
+                        </ul>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                          <ul class="p-3">
+                            <li>Download the project</a></li>
+                            <li>Open project through CMD or git bash</li>
+                            <li>Go to project folder</li>
+                            <li>Install npm with <b>npm install</b></li>
+                            <li>Run project with <b>npm start</b> locally</li>
+                        </ul>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- installation section end  -->  
+                  
+                  <!-- deploy section start  -->                      
+                  <div id="deploy" class=" py-5">
+                    <div class="mb-3">
+                      <h2 class="fw-bold">How to Deploy</h2>
+                    </div>
+                    <p class="border-bottom pb-2">
+                      Deployment is the last step to publish your site.After completion of build your project, check is there any folder generated name @build. <br>
+                      You need to upload this folder on your root directory.Now follow the procedure given bellow.
+                    </p>
+                      <div>
+                        <div class="row align-items-center">
+                          <div class="col-12 col-md-12 col-lg-6 col-xl-6">
+                            <div class="deployText py-3">
+                              <h3>If you want to deploy on your cPannel <br> or any hosting service</h3>
+                              <ul class="p-0">
+                                <li>Open another terminal in your code editor or CMD or git bash</li>
+                                <li>Or Stop your current terminal by <span class="text-primary"><b>Ctrl + C</b></span></li>
+                                <li>Then, Make a build folder whitch have to upload in your <br> hosting pannel by giving this command <span class="text-primary"><b>npm run build</b></span>.If your are using yarn then <span class="text-primary"><b>yarn build</b></span></li>
+                                <li>Now a folder name <span class="text-primary">build</span> willbe appear in your project folder</li>
+                                <li>You can upload build folder to any hosting www root directory.</li>
+                              </ul>
+                              <div class="deployBtnContainer">
+                                <a class="px-5 py-3 text-light border border-light" target="_blank" href="https://blog.teamtreehouse.com/getting-started-create-react-app-tool#:~:text=The%20build%20command%20transpiles%20your,to%20help%20reduce%20download%20times." >Read More</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-6 col-xl-6">
+                            <div class="deployImages py-3">
+                              <div class="row align-items-center">
+                                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                                  <div class="row align-items-center">
+                                    <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                                      <div class="singleComponents">
+                                        <img src="./assets/img/components/deploy1.PNG" alt="" class="w-100">
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-12 col-lg-12 col-xl-12 mt-5">
+                                      <div class="singleComponents">
+                                        <img src="./assets/img/components/deploy2.PNG" alt="" class="w-100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                                  <div class="row align-items-center">
+                                    <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                                      <div class="singleComponents">
+                                        <img src="./assets/img/components/deploy3.PNG" alt="" class="w-100">
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-12 col-lg-12 col-xl-12 mt-5">
+                                      <div class="singleComponents">
+                                        <img src="./assets/img/components/deploy4.PNG" alt="" class="w-100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- deploy section end  --> 
+                  
+                  <!-- structure section start  -->                      
+                  <div id="structure" class="py-5">
+                    <div class="mb-3">
+                      <h2 class="fw-bold">Project Structure</h2>
+                    </div>
+                    <div>
+                      <p class="border-bottom pb-2">THE CHAMP has a proper and standard component wise structure.Each and every component canbe re-useable for creating a new page.There are more than <b><span class="text-success">15+ components</span></b> to use.All single components are static data so that no need to manage variables,states and others objects. <br> The project folder contains specific folder for specific components.There also have <b><span class="text-success">Pages folder </span></b> for every pages and same as others to manage your components easily.</p>
+                      <div class="structure">
+                        <div class="lightBlue">
+                          <ul>
+                            <li><span class="text-secondary">THE CHAMP/public</span></li>
+                            <li><span class="text-secondary">THE CHAMP/src</span></li>
+                          </ul>
+                          <p class="m-0">All the components and Pages contains @src folder.Hooks,Provider,Components,Pages & images are here.</p>
+                        </div>
+                        <div class="lightBlue">
+                          <ul>
+                            <li><span class="text-secondary">THE CHAMP/src/Pages</span></li>
+                            <li><span class="text-secondary">THE CHAMP/src/Components</span></li>
+                          </ul>
+                          <p class="m-0">All pages are in pages folder and each page is renderd by every single components.</p>
+                        </div>
+                        <div class="lightBlue">
+                          <ul>
+                            <li><span class="text-secondary">THE CHAMP/src/Pages/Home/Home.js</span></li>
+                          </ul>
+                        </div>
+                        <div class="lightBlue">
+                          <ul>
+                            <li><span class="text-secondary">THE CHAMP/src/Components/Header</span></li>
+                            <li><span class="text-secondary">THE CHAMP/src/Components/Banner</span></li>
+                            <li><span class="text-secondary">THE CHAMP/src/Components/Gallery</span></li>
+                            <li><span class="text-secondary">THE CHAMP/src/Components/Blog</span></li>
+                            <li><span class="text-secondary">THE CHAMP/src/Components/Skill</span></li>
+                            <li><span class="text-secondary">THE CHAMP/src/Components/Awards</span></li>
+                            <li><span class="text-secondary">More than 20+ Components contain in Components folder</span></li>
+                          </ul>
+                          <p class="m-0">All pages are in pages folder and each page is renderd by every single components.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- structure section end  -->    
+
+                  <!-- component section start  -->                    
+                  <div id="component" class="py-5">
+                    <div class="mb-3">
+                      <h2 class="fw-bold">Preview Images</h2>
+                    </div>
+                    <div class="components">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="singleComponents">
+                            <h5>Header</h5>
+                            <div class="componentImg">
+                              <img src="./assets/img/components/StickyHeader.PNG" alt="" class="w-100">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                          <div class="singleComponents">
+                        <h5>Banner</h5>
+                        <div class="componentImg">
+                          <img src="./assets/img/components/Banner.PNG" alt="" class="w-100">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="singleComponents">
+                              <h5>About Me</h5>
+                              <div class="componentImg">
+                                <img src="./assets/img/components/About.PNG" alt="" class="w-100">
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                          <div class="singleComponents">
+                        <h5>Gallery</h5>
+                        <div class="componentImg">
+                          <img src="./assets/img/components/Gallery.PNG" alt="" class="w-100">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="singleComponents">
+                              <h5>Achievement</h5>
+                              <div class="componentImg">
+                                <img src="./assets/img/components/Achievement.PNG" alt="" class="w-100">
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                          <div class="singleComponents">
+                            <h5>Skill Section</h5>
+                            <div class="componentImg">
+                              <img src="./assets/img/components/Skill.PNG" alt="" class="w-100">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="singleComponents">
+                              <h5>Blog</h5>
+                              <div class="componentImg">
+                                <img src="./assets/img/components/Blog.PNG" alt="" class="w-100">
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                          <div class="singleComponents">
+                            <h5>Comment Section</h5>
+                            <div class="componentImg">
+                              <img src="./assets/img/components/Comment.PNG" alt="" class="w-100">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="singleComponents">
+                              <h5>Contact Form</h5>
+                              <div class="componentImg">
+                                <img src="./assets/img/components/Contact.PNG" alt="" class="w-100">
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="singleComponents">
+                            <h5>Footer</h5>
+                            <div class="componentImg">
+                              <img src="./assets/img/components/Footer.PNG" alt="" class="w-100">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!-- component section end  -->
+
+                  <!-- requirement section start  -->
+                  <div id="node" class="py-5">
+                    <div class="mb-3">
+                      <h2 class="fw-bold">Node Js</h2>
+                    </div>
+                    <p class="border-bottom pb-2">As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. In the following "hello world" example, many connections can be handled concurrently. Upon each connection, the callback is fired, but if there is no work to be done, Node.js will sleep.</p>
+                    <div class="depd">
+                      <h5>Dependencies</h5>
+                        <div class="lightBlue">
+                          <span class="fs-5">Libraries</span>
+                          <ul>
+                            <li>V8</li>
+                            <li>libuv</li>
+                            <li>llhttp</li>
+                            <li>OpenSSL</li>
+                            <li>zlib</li>
+                          </ul>
+                        </div>
+                        <div class="lightBlue">
+                          <span class="fs-5">Tools</span>
+                          <ul>
+                            <li>npm</li>
+                            <li>gyp</li>
+                            <li>gtest</li>
+                          </ul>
+                        </div>
+                    </div>
+                  </div>
+                  <div id="bash" class="py-5">
+                    <div class="mb-3">
+                      <h2 class="fw-bold">git-SCM</h2>
+                    </div>
+                    <p class="border-bottom pb-2">As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. In the following "hello world" example, many connections can be handled concurrently. Upon each connection, the callback is fired, but if there is no work to be done, Node.js will sleep.</p>
+                    <div class="depd">
+                      <h5>Branching and Merging</h5>
+                        <div class="lightBlue">
+                          <p>The Git feature that really makes it stand apart from nearly every other SCM out there is its branching model.
+                            Git allows and encourages you to have multiple local branches that can be entirely independent of each other. The creation, merging, and deletion of those lines of development takes seconds.
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- requirement section end  -->
+
+                  <!-- change image section start  -->
+                  <div id="change" class="py-5">
+                    <div class="mb-3">
+                      <h2 class="fw-bold">How to change image?</h2>
+                    </div>
+                    <p class="border-bottom pb-2">All images folder and image name has clearly named in utilities folder.To change any section image,find the folder first and add your image in the same folder. <br> then set the same name as the section or previous image name. <br> Please follow the progress bellow.</p>
+                    <div>
+                      <span><i class="fas fa-dot-circle fs-6 text-dark me-2"></i>Move your image at the same folder</span>
+                      <div class="lightGreen">
+                        <p class="m-0">THE CHAMP/src/utilities/images/background/ <span class="fw-bold">[aboutme.jpg],[yourImage.jpg]</span></p>
+                      </div>
+                    </div>
+                    <div>
+                      <span><i class="fas fa-dot-circle fs-6 text-dark me-2"></i>change your image name according the same name as previous</span>
+                      <div class="lightGreen">
+                        <p class="m-0">THE CHAMP/src/utilities/images/background/<span class="fw-bold">[aboutme.jpg]</span><i class="fas fa-hand-point-left"></i></p>
+                      </div>
+                    </div>
+                    <div class="lightRed">
+                      <p class="m-0">[N.B]: image name and extention must match and text transformation is important also.</p>
+                    </div>
+                  </div>
+                  <!-- change image section end  -->
+
+                  <!-- edit text section start  -->
+                  <div id="textedit" class="py-5">
+                    <div class="mb-3">
+                      <h2 class="fw-bold">How to Edit text?</h2>
+                    </div>
+                    <p class="border-bottom pb-2">Heading,paragraph,title and subtitle texts have used in each page.But few text can controll from dashboard.There is an option in header.Go to dashboard.Each page have specific section and input field and textarea to entered your text</p>
+                  </div>
+                  <div class="singleComponents">
+                    <h5>Header</h5>
+                    <div class="componentImg">
+                      <img src="./assets/img/components/StickyHeader.PNG" alt="" class="w-100">
+                    </div>
+                  </div>
+                  <div class="singleComponents">
+                    <h5>Dashboard</h5>
+                    <div class="componentImg">
+                      <img src="./assets/img/components/dashboard.PNG" alt="" class="w-100">
+                    </div>
+                  </div>
+                  <div class="lightBlue">
+                    <p>You will also get notification for success and failed alert also in case of appropriate form submission</p>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-6">
+                      <div class="singleComponents">
+                    <h5>Success alert</h5>
+                    <div class="componentImg">
+                      <img src="./assets/img/components/success-alert.PNG" alt="" class="w-100">
+                    </div>
+                  </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-6">
+                      <div class="singleComponents">
+                    <h5>Failed alert</h5>
+                    <div class="componentImg">
+                      <img src="./assets/img/components/fail-alert.PNG" alt="" class="w-100">
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+                  <!-- edit text section end  -->
+                </div>
+              </div>
+              <!-- main content end  --> 
+              <div class="col-12 col-md-12 col-lg-3 col-xl-2 p-2 border-0 last border-start">
+                <div class="">
+                  <div>
+                      <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Requirements
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <ul class="m-0 p-0">
+                                <li><a href="#node">Node Js</a></li>
+                                <li><a href="#bash">Git bash(Optional)</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Customization
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <ul class="p-0 m-0">
+                                <li><a href="#change">Change Image</a></li>
+                                <li><a href="#textedit">Edit Text</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Problems ?
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <ul class="p-0 m-0">
+                                <li><a href="#">Installation</a></li>
+                                <li><a href="#">Build Command</a></li>
+                                <li><a href="#">Run Application</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div>
+                    <span>Version Upgrade</span><br>
+                    <span>FAQ?</span>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="./assets/js/fontAwesome.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
