@@ -1,0 +1,40 @@
+.events{
+    color: white;
+}
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.event-badge{
+    position: absolute;
+    bottom: 32%;
+    left: 0;
+}
+.singleEvents {
+    position: relative;
+    padding: 2rem;
+    border: 1px solid grey;
+    overflow: hidden;
+}
+.event-badge {
+    position: absolute;
+    bottom: 36%;
+    left: 0;
+    background: white;
+    color: black;
+    width: 25%;
+    padding: .4rem;
+    z-index: 2;
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+}
+.event-hover-image {
+    border: 1px solid grey;
+    overflow: hidden;
+    transition: .4s;
+}
+.event-hover-image:hover {
+    transform: scale(1.04);
+}
+.event-hover-image img {
+    object-fit: cover;
+}
