@@ -1,9 +1,0 @@
-.map-container {
-    background: white;
-    color: black;
-}
-.map {
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-}
