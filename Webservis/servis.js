@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const dbConfig = require("./src/config/db.config");
+//const dbConfig = require("./src/config/db.config");
 
 const app = express();
 
@@ -10,11 +10,9 @@ var corsOptions = {
 
 app.use(cors(corsOptions));
 
-// parse requests of content-type - application/json
-app.use(express.json());
+ app.use(express.json());
 
-// parse requests of content-type - application/x-www-form-urlencoded
-app.use(express.urlencoded({ extended: true }));
+ app.use(express.urlencoded({ extended: true }));
 
 const db = require("./src/models");
 const Role = db.role;
@@ -28,7 +26,7 @@ db.mongoose
   })
   .then(() => {
     console.log("Successfully connect to MongoDB.");
-    initial();
+    //initial();
   })
   .catch(err => {
     console.error("Connection error", err);
@@ -37,7 +35,7 @@ db.mongoose
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Welcome to Junior SuperLig Api application." });
 });
 
 
