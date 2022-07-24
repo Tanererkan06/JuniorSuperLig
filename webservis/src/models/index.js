@@ -23,7 +23,7 @@ db.Veli = require("./Veli.model")
 //db.Hakem = require("./Hakem.model")
 //db.ilTemsilcisi = require("./ilTemsilcisi.model")
 //db.PuanDurumu
-//
+//db.AntrenorHoca
    
 
 db.ROLES = ["user", "admin"]; // buralar arttırılacak 
