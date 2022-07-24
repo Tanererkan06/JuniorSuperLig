@@ -4,6 +4,7 @@ import "./Banner.css";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
+
 const Banner = () => {
   const {bannerInfo} = useAuth()
   const goBottom = () => {
@@ -32,7 +33,7 @@ const Banner = () => {
               }
               </p>
               <div className="signature w-50 mb-3">
-                <img src={require('../../utilities/images/layout/signature.png')} alt="" className="w-100" />
+                <img src={require('../../utilities/images/layout/signature1.png')} alt="" className="w-100" />
               </div>
               <div className="buttonGroup">
                 <button className="me-1 button1"><Link className="text-decoration-none" to="/blog">Read More</Link></button>

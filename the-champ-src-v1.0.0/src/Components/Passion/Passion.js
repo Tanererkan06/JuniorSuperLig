@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import image1 from "../../utilities/images/layout/home-passion-layout.png";
+import image1 from "../../utilities/images/layout/home-passion-layout1.png";
 import "./Passion.css";
 const Passion = () => {
 
