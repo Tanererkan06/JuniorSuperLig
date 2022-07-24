@@ -64,13 +64,13 @@ app.use(express.static('public'));
 console.log(db.url);
 
 db.mongoose
-  .connect(db.url, {
+  .connect("mongodb+srv://Tanererkan06:Jm7o0mUG9SDDNpTZ@cluster0.ud1p5.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
   .then(() => {
     console.log("Connected to the database!");
-      //  initial();
+       initial();
 
   })
   .catch(err => {

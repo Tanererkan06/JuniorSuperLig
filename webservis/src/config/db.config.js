@@ -1,7 +1,16 @@
 module.exports = { 
-  database: "Juniorsuperligdb",
-  //url: "mongodb://37.77.4.139:27017/dogsandb",
+  database: "juniorsuperlig_db",
+  url: "mongodb+srv://Tanererkan06:Jm7o0mUG9SDDNpTZ@cluster0.ud1p5.mongodb.net/?retryWrites=true&w=majority",
   imgBucket: "photos",
   videoBucket: "fs",
    
 };
+
+/*
+module.exports = {
+  HOST: "localhost",
+  PORT: 27017,
+  DB: "bezkoder_db"
+};
+
+*/
