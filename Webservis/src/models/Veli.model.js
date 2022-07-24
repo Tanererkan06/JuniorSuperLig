@@ -1,6 +1,6 @@
  const mongoose = require("mongoose");
 
-const Sponsor = mongoose.model(
+const Veli = mongoose.model(
   "Veli",
   new mongoose.Schema({
     //username: String,
@@ -10,5 +10,5 @@ const Sponsor = mongoose.model(
   })
 );
 
-module.exports = Sponsor;
+module.exports = Veli;
 

@@ -1,7 +1,7 @@
  const mongoose = require("mongoose");
 
-const Fikstur = mongoose.model(
-  "Fikstur",
+const Takim = mongoose.model(
+  "Takim",
   new mongoose.Schema({
     //username: String,
    // email: String,
@@ -10,5 +10,5 @@ const Fikstur = mongoose.model(
   })
 );
 
-module.exports = Fikstur;
+module.exports = Takim;
 

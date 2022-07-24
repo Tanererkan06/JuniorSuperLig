@@ -1,6 +1,6 @@
  const mongoose = require("mongoose");
 
-const Sponsor = mongoose.model(
+const Ligler = mongoose.model(
   "Ligler",
   new mongoose.Schema({
     //username: String,
@@ -10,5 +10,5 @@ const Sponsor = mongoose.model(
   })
 );
 
-module.exports = Sponsor;
+module.exports = Ligler;
 
