@@ -1,0 +1,30 @@
+{ 
+    "login": "Giriş Yap",
+    "forgotPassword": "Şifremi Unuttum",
+    "signup": "Kayıt Ol",
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "teams": "Takımlar",
+    "match": "Müsabakalar",
+    "news": "Haberler",
+    "contact": "İletişim",
+    "logout":"Çıkış",
+    "LATEST NEWS" : "Son Haberler",
+    "About":"Hakkımızda",
+    "Information":"Bilgi",
+    "Support":"Destek",
+    "Contact us":"Bize Ulaşın",
+    "Our Team":"Takımlar",
+    "Match": "Müsabakalar",
+    "Contact": "İletişim",
+    "Join the Junior Superlig Mailing list and receive the latest news of Junior Superlig! Just enter your email address here and you are all set.":"Junior Superlig Mail listesine katılın ve Junior Superlig ile ilgili en son haberleri alın! Sadece e-posta adresinizi buraya girin ve hazırsınız.",
+    "Register":"Kayıt Ol",
+    "Newsletter":"Bülten",
+    "Loading":"Yükleniyor",
+    "©Copyright 2022  Junior Super League . All Rights Reserved":"©Copyright 2022 Gençler Süper Ligi. Tüm hakları Saklıdır",
+    "Latest Result":"Son Sonuç",
+    "Upcoming Matches":"Yaklaşan Müsabakalar",
+    "Standings":"Puan Durumu"
+
+
+}

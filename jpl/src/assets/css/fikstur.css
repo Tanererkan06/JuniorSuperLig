@@ -1,0 +1,112 @@
+.liveplay-l {
+    padding: 10.5px 16px;  
+    width: 550px;
+    height: 30px;
+    text-align: left;
+    font-size: 12px;
+}
+.liveplay-r {
+    padding: 10.5px 16px;  
+    width: 550px;
+    height: 30px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.liveplay-time {
+    padding: 10.5px 16px;
+    width: 20x;
+    height: 30px;
+    text-align: center;
+    font-size: 12px;
+    background: #3d4c64;
+    color: #fbfbfb;
+}
+
+
+
+
+
+
+
+
+.fikstur-bilgi {
+    padding: 10.5px 16px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+    background: #2a3444;
+    color: #fbfbfb;
+}
+.fikstur-sira-l {
+    padding: 10.5px 16px;  
+    width: 18px;
+    height: 50px;
+    text-align: left;
+    font-size: 12px;
+}
+.fikstur-sira-r {
+    padding: 10.5px 16px;  
+    width: 18px;
+    height: 50px;
+    text-align: right;
+    font-size: 12px;
+}
+.Fikstur-adi {
+    padding: 10.5px 16px;  
+    width: 295px;
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+   
+}
+.Fikstur-button-p {
+    padding: 10.5px 16px;  
+    width: 313px;
+    height: 50px;
+    text-align: left;
+    background: #3d4c64;
+    color: #fbfbfb;
+    font-size: 12px;
+   
+}
+.Fikstur-button-n {
+    padding: 10.5px 16px;  
+    width: 326px;
+    height: 50px;
+    text-align: right;
+    background: #3d4c64;
+    color: #fbfbfb;
+    font-size: 12px;
+   
+}
+.fikstur-footer-bilgi {
+    padding: 10.5px 16px;
+    width: 97px;
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+    background: #2a3444;
+    color: #fbfbfb;
+}
+.lates-sıra-l {
+    padding: 10.5px 16px;  
+    width: 235px;
+    height: 50px;
+    text-align: left;
+    font-size: 12px;
+    background: #3d4c64;
+    color: #fbfbfb;
+   
+}
+.lates-sıra-r {
+    padding: 10.5px 16px;  
+    width: 235px;
+    height: 50px;
+    text-align: right;
+    font-size: 12px;
+    background: #3d4c64;
+    color: #fbfbfb;
+   
+}
