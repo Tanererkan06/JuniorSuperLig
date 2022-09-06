@@ -1,0 +1,185 @@
+const express = require("express");
+const cors = require("cors");
+const http = require('http');
+const cookieSession = require("cookie-session");
+const session = require('express-session');
+const bodyParser = require("body-parser");
+const db = require("./src/models");
+const xXssProtection = require("x-xss-protection");
+const helmet = require("helmet");
+const hpp = require("xss-clean");
+const rateLimit = require("express-rate-limit");
+var xssFilters = require('xss-filters');
+var csrf = require('csurf')
+var csrfProtection = csrf({ cookie: true })
+const mongodb = require('mongodb');
+const app = express();
+const path = require("path");
+const server = http.createServer(app);
+const { Server } = require("socket.io");
+const soap = require('soap');
+const ADRES = 'https://tckimlik.nvi.gov.tr/service/kpspublic.asmx?WSDL';
+
+
+
+let degerler = {
+  TCKimlikNo: 36673024326,
+  Ad: 'Taner',
+  Soyad: 'ERKAN',
+  DogumYili: 1988
+};
+
+soap.createClient(ADRES, (err, client) => {
+  client.TCKimlikNoDogrula(degerler, (err, result) => {
+    if (result.TCKimlikNoDogrulaResult) {
+      console.log('Bilgiler doğru'+JSON.stringify(result));
+    } else {
+      console.log('Bilgiler hatalı');
+    }
+  });
+});
+
+global.__basedir = __dirname;
+
+
+var corsOptions = {
+  origin: "*"
+};
+
+const io = new Server(server, {
+  cors: {
+    origin: "*",
+    methods: ["GET", "POST"],
+  },
+});
+ 
+
+app.use(cors(corsOptions));
+
+
+app.use(bodyParser.json());
+
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the reques>
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
+  if (req.method === 'OPTIONS') {
+    res.send(200);
+  } else {
+    next();
+  }
+});
+
+var expiryDate = new Date(Date.now() + 60 * 60 * 1000)
+app.use(express.urlencoded({ extended: false }));
+
+
+app.use(express.static('public'));
+
+
+/*   app.use(
+  cookieSession({
+    name: "jpl-session",
+    secret: "JuniorsuperligJWT",  should use as secret environment variable
+    httpOnly: true
+  })
+);  */
+
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(helmet.hidePoweredBy());
+app.use(hpp());
+app.use(xXssProtection());
+app.disable('x-powered-by');
+ 
+
+
+
+
+db.mongoose
+  .connect(
+    `mongodb+srv://Tanererkan06:Jm7o0mUG9SDDNpTZ@cluster0.ud1p5.mongodb.net/?retryWrites=true&w=majority`,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    })
+  .then(() => {
+    console.log("Successfully connect to MongoDB.");
+    //initial();
+  })
+  .catch(err => {
+    console.error("Connection error", err);
+    process.exit();
+  });
+
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome to Junior SuperLig Api application." });
+});
+
+
+ // MIDDLEWARE
+//app.use(morgan('dev'));
+app.use(bodyParser.json({limit: '100mb'}));
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+    limit: '100mb',
+    extended: true
+    }));
+//app.use(cookieParser());
+app.use(cors());
+
+ 
+
+require("./src/routes/AntrenorHoca.routes.js")(app);
+require("./src/routes/Veli.routes.js")(app);
+require("./src/routes/Bannerreklam.routes.js")(app);
+require("./src/routes/Contact.routes.js")(app);
+require("./src/routes/News.routes.js")(app);
+require("./src/routes/Slider.routes.js")(app);
+require("./src/routes/Sehir.routes.js")(app);
+require("./src/routes/Fikstur.routes.js")(app);
+require("./src/routes/Gozlemci.routes.js")(app);
+require("./src/routes/Hakem.routes.js")(app);
+require("./src/routes/IlTemsilcisi.routes.js")(app);
+require("./src/routes/Ligler.routes.js")(app);
+require("./src/routes/Oyun.routes.js")(app);
+require("./src/routes/OyuncuKarti.routes.js")(app);
+require("./src/routes/OyunKonum.routes.js")(app);
+require("./src/routes/OyunLive.routes.js")(app);
+require("./src/routes/PuanDurumu.routes.js")(app);
+require("./src/routes/Sponsor.routes.js")(app);
+require("./src/routes/SponsorKategori.routes.js")(app);
+require("./src/routes/SponsorSuresi.routes.js")(app);
+require("./src/routes/SponsorUcretBirimi.routes.js")(app);
+require("./src/routes/Takim.routes.js")(app);
+
+const authRoutes = require('./src/routes/auth');
+/* const productRoutes = require('./src/routes/product');
+const categoryRoutes = require('./routes/category');
+const bannerRoutes = require('./src/routes/banner'); */
+
+ app.use("/api", authRoutes)
+/* app.use("/api", productRoutes)
+app.use("/api", categoryRoutes)
+app.use("/api", bannerRoutes)
+ */
+io.on('connection', (socket) => {
+  online++;
+  console.log(`User Connected: ${socket.id}`);
+  console.log(`Online: ${online}`);
+  io.emit('visitor enters', online);
+
+  socket.on('disconnect', () => {
+    online--;
+    console.log(`Socket ${socket.id} disconnected.`);
+    console.log(`Online: ${online}`);
+    io.emit('visitor exits', online);
+  });
+
+ 
+
+});
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
+});
