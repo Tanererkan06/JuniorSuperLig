@@ -128,6 +128,7 @@ require("./routes/Contact.routes.js")(app);
 require("./routes/News.routes.js")(app);
 require("./routes/Sehir.routes.js")(app);
 require("./routes/Fikstur.routes.js")(app);
+require("./routes/FiksturTakim.routes.js")(app);
 require("./routes/Gozlemci.routes.js")(app);
 require("./routes/Hakem.routes.js")(app);
 require("./routes/IlTemsilcisi.routes.js")(app);
@@ -232,15 +233,7 @@ function initial() {
         console.log("added 'Veli' to roles collection");
       });
 
-      new Role({
-        name: "Hakem"
-      }).save(err => {
-        if (err) {
-          console.log("error", err);
-        }
-
-        console.log("added 'Hakem' to roles collection");
-      });
+  
 
       new Role({
         name: "ilYoneticisi"

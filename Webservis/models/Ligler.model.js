@@ -1,19 +1,18 @@
  module.exports = mongoose => {
   var schema = mongoose.Schema(
     {
+      ligid:String,
       ligadi:String,
+      ulke:String,
       sehir: 
         {
           type: Array,
           required: true,
         },
+      ilce:String,
       published: Boolean,
       
-   /*     /*    img:
-      {
-        data: Buffer,
-        contentType: String
-      }, */   
+   
     },
     { timestamps: true }
   );

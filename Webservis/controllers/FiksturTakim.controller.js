@@ -6,7 +6,7 @@ var fs = require('fs');
 const path = require('path');
 
 var mime = require('mime');
-const Fikstur = db.Fiksturs;
+const FiksturTakim = db.FiksturTakims;
  
 
 exports.create = (req, res) => { 
@@ -16,23 +16,14 @@ exports.create = (req, res) => {
     return;
   } */
 
-  let fikstur = new Fikstur({
+  let fiksturTakim = new FiksturTakim({
     ligid:req.body.ligid,
-    baslangictarihi:req.body.baslangictarihi,
-    bitistarihi:req.body.bitistarihi,
-    aktiflig:req.body.aktiflig,
+    takimid:req.body.takimid,
     IsDeleted:req.body.IsDeleted,
-    pazartesi:req.body.pazartesi,
-    sali:req.body.sali,
-    carsamba:req.body.carsamba,
-    persembe:req.body.persembe,
-    cuma:req.body.cuma,
-    cumartesi:req.body.cumartesi,
-    pazar:req.body.pazar,
     published: req.body.published ? req.body.published : false,
   });  
 
-  fikstur.save(fikstur)
+  fiksturTakim.save(fiksturTakim)
     .then(data => {
        res.send(data);
       console.log(data)
@@ -40,7 +31,7 @@ exports.create = (req, res) => {
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while creating the Fikstur."
+          err.message || "Some error occurred while creating the Fikstur Takim."
       });
     });
 };
@@ -49,7 +40,7 @@ exports.findAll = (req, res) => {
   const ligid = req.query.ligid;
    var condition = ligid ? { ligid: { $regex: new RegExp(ligid), $options: "i" } } : {};
 
-  Fikstur.find(condition)
+   FiksturTakim.find(condition)
     .then(data => {
        res.send(data);
       console.log(data)
@@ -57,7 +48,7 @@ exports.findAll = (req, res) => {
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while retrieving Fiksturs."
+          err.message || "Some error occurred while retrieving FiksturTakims."
       });
     });
 };
@@ -65,10 +56,10 @@ exports.findAll = (req, res) => {
 exports.findOne = (req, res) => {
   const id = req.params.id;
 
-  Fikstur.findById(id)
+  FiksturTakim.findById(id)
     .then(data => {
       if (!data)
-        res.status(404).send({ message: "Not found Fikstur with id " + id });
+        res.status(404).send({ message: "Not found Fikstur Takim with id " + id });
       else   res.send(data);
       console.log(data)
       console.log(data)
@@ -76,7 +67,7 @@ exports.findOne = (req, res) => {
     .catch(err => {
       res
         .status(500)
-        .send({ message: "Error retrieving Fikstur with id=" + id });
+        .send({ message: "Error retrieving Fikstur Takim with id=" + id });
     });
 };
 
@@ -89,17 +80,17 @@ exports.update = (req, res) => {
 
   const id = req.params.id;
 
-  Fikstur.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
+  FiksturTakim.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
     .then(data => {
       if (!data) {
         res.status(404).send({
-          message: `Cannot update Fikstur with id=${id}. Maybe Fikstur was not found!`
+          message: `Cannot update Fikstur Takim with id=${id}. Maybe Fikstur Takim was not found!`
         });
-      } else res.send({ message: "Fikstur was updated successfully." });
+      } else res.send({ message: "Fikstur Takim was updated successfully." });
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error updating Fikstur with id=" + id
+        message: "Error updating Fikstur Takim with id=" + id
       });
     });
 };
@@ -107,42 +98,42 @@ exports.update = (req, res) => {
 exports.delete = (req, res) => {
   const id = req.params.id;
 
-  Fikstur.findByIdAndRemove(id, { useFindAndModify: false })
+  FiksturTakim.findByIdAndRemove(id, { useFindAndModify: false })
     .then(data => {
       if (!data) {
         res.status(404).send({
-          message: `Cannot delete Fikstur with id=${id}. Maybe Fikstur was not found!`
+          message: `Cannot delete Fikstur Takim with id=${id}. Maybe Fikstur Takim was not found!`
         });
       } else {
         res.send({
-          message: "Fikstur was deleted successfully!"
+          message: "Fikstur Takim was deleted successfully!"
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Could not delete Fikstur with id=" + id
+        message: "Could not delete Fikstur Takim with id=" + id
       });
     });
 };
 
 exports.deleteAll = (req, res) => {
-    Fikstur.deleteMany({})
+  FiksturTakim.deleteMany({})
     .then(data => {
       res.send({
-        message: `${data.deletedCount} Fiksturs were deleted successfully!`
+        message: `${data.deletedCount} Fikstur Takim were deleted successfully!`
       });
     })
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while removing all Fiksturs."
+          err.message || "Some error occurred while removing all Fikstur Takim."
       });
     });
 };
 
 exports.findAllPublished = (req, res) => {
-    Fikstur.find({ published: true })
+  FiksturTakim.find({ published: true })
     .then(data => {
        res.send(data);
       console.log(data)
@@ -150,7 +141,7 @@ exports.findAllPublished = (req, res) => {
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while retrieving Fiksturs."
+          err.message || "Some error occurred while retrieving Fikstur Takim."
       });
     });
 };

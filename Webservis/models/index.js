@@ -31,7 +31,7 @@ db.Sliders = require("./Slider.model")(mongoose)
 db.BannerReklams=require("./BannerReklam.model")(mongoose)
 db.SponsorSureTurus=require("./SponsorSureTuru.model")(mongoose)
 db.Contacts=require("./Contact.model")(mongoose)
-
+db.FiksturTakims=require("./FiksturTakim.model")(mongoose)
  db.ROLES = ["user", "admin", "gozcu", "veli", "ilYoneticisi", "sponsor", "veliVeAntrenor", "antrenor"]; 
 
 

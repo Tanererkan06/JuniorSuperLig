@@ -2,19 +2,28 @@
 module.exports = mongoose => {
   var schema = mongoose.Schema(
     {
-      ligid:Number,
+      ligid:String,
+      baslangictarihi:Date,
+      bitistarihi:Date,
+      aktiflig:Boolean,
+      isDeleted:Boolean,
+      pazartesi:Boolean,
+      sali:Boolean,
+      carsamba:Boolean,
+      persembe:Boolean,
+      cuma:Boolean,
+      cumartesi:Boolean,
+      pazar:Boolean,
+      published: Boolean
+
+      /* mactarihi:Date,
+      oyunyeri:String,
       ligadi:String,
       sezon:Number,
-      başlangıctarihi:Date,
-      bitistarihi:Date,
-      mactarihi:Date,
       evsahibitakmid:Number,
       deplasmantakimid:Number,
       evsahibitakimadi:String,
-      deplasmantakimadi:String,
-      oyunyeri:String,
-      
-      published: Boolean
+      deplasmantakimadi:String, */
    /*     /*    img:
       {
         data: Buffer,

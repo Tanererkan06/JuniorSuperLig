@@ -16,7 +16,9 @@ module.exports = function(app) {
   });
 
   app.get("/api/test/all", controller.allAccess);
+  app.get("/api/test/allusers", User.findAll);
   app.get("/api/test/tumgozculer", User.gozculistesi);
+  app.get("/api/test/:id", User.findOne);
 
   app.get(
     "/api/test/admin",

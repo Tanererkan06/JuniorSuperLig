@@ -11,8 +11,7 @@ exports.signup = (req, res) => {
     username: req.body.username,
     email: req.body.email,
     password: bcrypt.hashSync(req.body.password, 8),
-    roles: [req.body.roles].toString() 
-  });
+   });
 
   user.save((err, user) => {
     if (err) {
@@ -42,10 +41,8 @@ exports.signup = (req, res) => {
           });
         }
       );
-
-
     } else {
-      Role.findOne({ name: "User" }, (err, role) => {
+      Role.findOne({ name: "user" }, (err, role) => {
         if (err) {
           res.status(500).send({ message: err });
           return;
@@ -58,14 +55,11 @@ exports.signup = (req, res) => {
             return;
           }
 
-           res.send({ message: `${roles[0].name.charAt(0).toUpperCase() + roles[0].name.slice(1)} was registered successfully!` });
+          res.send({ message: "User was registered successfully!" });
         });
       });
     }
-  });  
-
-
-   
+  });
 };
 
 exports.signin = (req, res) => {

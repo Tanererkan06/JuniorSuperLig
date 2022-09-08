@@ -4,6 +4,9 @@ const dbConfig = require("../config/db.config");
 var multer = require('multer');
 var fs = require('fs');
 const path = require('path');
+const news2 = require('../models/News.model.js');
+const users2 = require('../models/user.model.js');
+const takims2 = require('../models/Takim.model.js');
 
 var mime = require('mime');
 const News = db.Newss;
@@ -153,6 +156,21 @@ exports.findAllPublished = (req, res) => {
           err.message || "Some error occurred while retrieving Newss."
       });
     });
+};
+
+exports.timeline = async (req, res) => {
+  try {
+    const currentUser = await takims2.findById(req.body.takimId);
+    const userPosts = await news2.find({ takimid: currentUser._id });
+    const friendPosts = await Promise.all(
+      currentUser.followings.map((friendId) => {
+        return news2.find({ takimId: friendId });
+      })
+    );
+    res.json(userPosts.concat(...friendPosts))
+  } catch (err) {
+    res.status(500).json(err);
+  }
 };
 
 

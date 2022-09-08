@@ -16,8 +16,11 @@ exports.create = (req, res) => {
       return;
     }  */ 
      const ligler = new Ligler({
+        ligId:req.body.ligId,
         ligadi:req.body.ligAdi,
+        ulke:req.body.ulke,
         sehir: req.body.sehir,
+        ilce:req.bod.ilce,
         published: req.body.published ? req.body.published : false
     });   
   

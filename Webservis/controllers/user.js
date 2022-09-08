@@ -91,7 +91,6 @@ exports.logout = (req, res, next)=>{
  
 exports.gozculistesi = (req, res, next)=>{
 
-
     const gozcu ="6314995711bed2acdb4e2fae";
 //server resetlenirse bu id'yi güncellenen yeni gozcu id'sine göre değiştir.
     
@@ -112,6 +111,40 @@ exports.gozculistesi = (req, res, next)=>{
        });
      }); 
 }
+
+exports.findAll = (req, res) => {
+    // const adi = req.query.adi;
+    // var condition = adi ? { adi: { $regex: new RegExp(adi), $options: "i" } } : {};
+  
+    User.find()
+      .then(data => {
+         res.send(data);
+        console.log(data)
+      })
+      .catch(err => {
+        res.status(500).send({
+          message:
+            err.message || "Some error occurred while retrieving Users."
+        });
+      });
+  };
+
+exports.findOne = (req, res) => {
+    const id = req.params.id;
+  
+    User.findById(id)
+      .then(data => {
+        if (!data)
+          res.status(404).send({ message: "Not found user with id " + id });
+        else  res.send(data);
+        console.log(data)
+      })
+      .catch(err => {
+        res
+          .status(500)
+          .send({ message: "Error retrieving user with id=" + id });
+      });
+  };
  
 
 exports.singleUser = async (req, res, next)=>{

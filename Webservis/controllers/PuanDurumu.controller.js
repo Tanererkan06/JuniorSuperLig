@@ -1,6 +1,5 @@
 const db = require("../models");
-//const upload = require("../middleware/bannerupload");
-const dbConfig = require("../config/db.config");
+ const dbConfig = require("../config/db.config");
 var multer = require('multer');
 var fs = require('fs');
 const path = require('path');
@@ -18,18 +17,17 @@ exports.create = (req, res) => {
 
   const puanDurumu = new PuanDurumu({
     sezon:req.body.sezon,
-    sehir: req.body.sehir,
     lig:req.body.lig,
-    ligadi:req.body.ligadi,
-    takimid:req.body.takimid,
-    takimadi:req.body.takimadi,
-    oynananoyun:req.body.oynananoyun,
+    ligadi:req.body.ligAdi,
+    takimid:req.body.takimId,
+    takimadi:req.body.takimAdi,
+    oynananoyun:req.body.oynananOyun,
     galibiyet:req.body.galibiyet,
-    malubiyet:req.body.malubiyet,
+    malubiyet:req.body.maglubiyet,
     beraberlik:req.body.beraberlik,
-    attigigol:req.body.attigigol,
-    yedigigol:req.body.yedigigol,
-    avaraj:req.body.avaraj,
+    attigigol:req.body.attigiGol,
+    yedigigol:req.body.yedigiGol,
+    avaraj:req.body.averaj,
     puan:req.body.puan,
     published: req.body.published ? req.body.published : false,
     
@@ -54,10 +52,7 @@ exports.findAll = (req, res) => {
 
   PuanDurumu.find(condition)
     .then(data => {
-      let x = data.sort(function(a, b) {
-        return parseFloat(b.puan) - parseFloat(a.puan);
-      });
-       res.send(x);
+       res.send(data);
       console.log(data)
     })
     .catch(err => {
