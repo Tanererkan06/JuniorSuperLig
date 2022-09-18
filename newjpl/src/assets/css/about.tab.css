@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+@import "//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css";
+
+/* * {
+    margin: 0;
+    padding: 0;
+    outline: 0 none;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    clear: both;
+    content: "";
+    display: block;
+    box-sizing: border-box;
+} */
+
+
+.active-tabs {
+    width: 800px;
+    padding: 10px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.active-tabs input {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+}
+.active-team-tabs {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    margin: 1px 0 0 -53px;
+    text-align: left;
+    display: inline-flex;
+   
+}
+
+
+.active-team-tabs input {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+}
+.btnn {
+    background: #898f8f;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-family: "Montserrat";
+    font-size: 14px;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+    transition: all 0.4s;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    padding: 2.5px;
+    display: block;
+    width: 100px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+.btnteam {
+    background: #e72f29;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-family: "Montserrat";
+    font-size: 14px;
+    height: 125px;
+    line-height: 25px;
+    text-align: center;
+    transition: all 0.4s;
+    margin: 0 auto;
+    position: relative;
+    padding: 2.5px;
+    display: block;
+    width: 37px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: rotate(-270);
+
+}
+
+.btnn:hover {
+    transform: translateY(-5px);
+    opacity: 1;
+}
+
+.active-tabs input:checked+label {
+    position: relative;
+    padding: 2.5px;
+    display: block;
+    width: 113px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #e72f29;
+    text-decoration: none;
+}
+.active-team-tabs input:checked+label {
+    position: relative;
+    padding: 2.5px;
+    display: block;
+    width: 37px;
+    color: #fff;
+ /*    text-transform: uppercase; */
+    background: #eee;
+    text-decoration: none;
+    transform: rotate(-270);
+    border-left: 3px solid #e72f29;
+}
+
+.active-tabs input:checked+li {
+    padding: 0 15px;
+    margin-bottom: 2px;
+    display: block;
+}
+
+.tabs-container {
+    width: 100%;
+    position: relative;
+    float: left;
+    top: -5px;
+    background: #fff;
+}
+
+.tab-1,
+.tab-2,
+.tab-3,
+.tab-4,
+.tab-5,
+.tab-6,
+.tab-7 {
+    height: 200px;
+    width: 100%;
+    box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+}
+
+.tab-2,
+.tab-4,
+.tab-6 {
+    height: 300px;
+}
+
+.tab-1 p,
+.tab-2 p,
+.tab-3 p,
+.tab-4 p,
+.tab-5 p,
+.tab-6 p,
+.tab-7 p {
+    color: #1babbb;
+    font-family: "Open Sans";
+    font-size: 50px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.tab-2 p,
+.tab-4 p,
+.tab-6 p {
+    line-height: 300px;
+}
+
+.btnn-1:checked~.tabs-container .tab-1,
+.btnn-2:checked~.tabs-container .tab-2,
+.btnn-3:checked~.tabs-container .tab-3,
+.btnn-4:checked~.tabs-container .tab-4,
+.btnn-5:checked~.tabs-container .tab-5,
+.btnn-6:checked~.tabs-container .tab-6,
+.btnn-7:checked~.tabs-container .tab-7 {
+    position: relative;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+.btnteam-1:checked~.tabs-container .tab-1,
+.btnteam-2:checked~.tabs-container .tab-2,
+.btnteam-3:checked~.tabs-container .tab-3,
+.btnteam-4:checked~.tabs-container .tab-4,
+.btnteam-5:checked~.tabs-container .tab-5,
+.btnteam-6:checked~.tabs-container .tab-6,
+.btnteam-7:checked~.tabs-container .tab-7 {
+    position: relative;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}

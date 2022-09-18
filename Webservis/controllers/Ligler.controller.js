@@ -16,11 +16,11 @@ exports.create = (req, res) => {
       return;
     }  */ 
      const ligler = new Ligler({
-        ligId:req.body.ligId,
-        ligadi:req.body.ligAdi,
-        ulke:req.body.ulke,
+        // ligId:req.body.ligId,
         sehir: req.body.sehir,
-        ilce:req.bod.ilce,
+        ligadi:req.body.ligAdi,
+        // ulke:req.body.ulke,
+        // ilce:req.bod.ilce,
         published: req.body.published ? req.body.published : false
     });   
   

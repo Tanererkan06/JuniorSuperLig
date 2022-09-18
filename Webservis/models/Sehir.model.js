@@ -2,8 +2,6 @@ module.exports = mongoose => {
     var schema = mongoose.Schema(
       {
         sehiradi:String,
-        // ligler:Number,
-        // takimlar:Number,
         ligler: 
         {
           type: Array,

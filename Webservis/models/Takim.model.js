@@ -181,7 +181,6 @@ const TakimSchema = new mongoose.Schema(
         type: Array,
         default: [],
       },
-     
       hocaid:  {
         type: String,
         default: "",
@@ -189,6 +188,10 @@ const TakimSchema = new mongoose.Schema(
       hocaadi:  {
         type: String,
         default: "",
+      },
+      veli: {
+        type: Array,
+        default: [],
       },
       logo:  {
         type: String,

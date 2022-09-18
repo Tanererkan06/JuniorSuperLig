@@ -11,7 +11,12 @@ exports.signup = (req, res) => {
     username: req.body.username,
     email: req.body.email,
     password: bcrypt.hashSync(req.body.password, 8),
-   });
+    otp_vertify: req.body.otp,
+    isim: req.body.isim,
+    sehir: req.body.sehir,
+    telefon: req.body.telefon,
+   //  roles:req.body.roles
+  });
 
   user.save((err, user) => {
     if (err) {
@@ -37,7 +42,7 @@ exports.signup = (req, res) => {
               return;
             }
 
-            res.send({ message: "User was registered successfully!" });
+            res.send({ message: "Başarıyla kayıt oldunuz!" });
           });
         }
       );
@@ -55,7 +60,7 @@ exports.signup = (req, res) => {
             return;
           }
 
-          res.send({ message: "User was registered successfully!" });
+          res.send({ message: "Başarıyla kayıt oldunuz!" });
         });
       });
     }
@@ -74,7 +79,7 @@ exports.signin = (req, res) => {
       }
 
       if (!user) {
-        return res.status(404).send({ message: "User Not found." });
+        return res.status(404).send({ message: "Kullanıcı bulunamadı!" });
       }
 
       var passwordIsValid = bcrypt.compareSync(
@@ -85,7 +90,7 @@ exports.signin = (req, res) => {
       if (!passwordIsValid) {
         return res.status(401).send({
           accessToken: null,
-          message: "Invalid Password!"
+          message: "Şifre hatalı!"
         });
       }
 
@@ -104,7 +109,11 @@ exports.signin = (req, res) => {
         username: user.username,
         email: user.email,
         roles: authorities,
-        accessToken: token
+        accessToken: token,
+        isim: user.isim,
+        sehir: user.sehir,
+        telefon: user.telefon,
+        // otp_vertify: user.otp_vertify
       });
     });
 };

@@ -21,6 +21,7 @@ exports.create = (req, res) => {
     iletisimnumber:req.body.iletisimnumber,
     iletisimeposta:req.body.iletisimeposta,
     harita:req.body.harita,
+    sehir: req.body.sehir,
     isim:req.body.isim,
     telefon:req.body.telefon,
     eposta:req.body.eposta,

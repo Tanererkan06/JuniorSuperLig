@@ -37,7 +37,6 @@ module.exports = app => {
      router.put("/:id/follow", Takim.followuser);
      router.put("/:id/unfollow", Takim.unfollowuser);
 
-
      /* router.put("/followuser/:id",isAuthenticated,Takim.followuser);
      router.put("/unfollowuser/:id",isAuthenticated,Takim.unfollowuser); */
   

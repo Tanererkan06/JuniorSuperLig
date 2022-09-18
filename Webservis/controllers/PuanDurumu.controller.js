@@ -18,6 +18,7 @@ exports.create = (req, res) => {
   const puanDurumu = new PuanDurumu({
     sezon:req.body.sezon,
     lig:req.body.lig,
+    sehir: req.body.sehir,
     ligadi:req.body.ligAdi,
     takimid:req.body.takimId,
     takimadi:req.body.takimAdi,
@@ -52,7 +53,9 @@ exports.findAll = (req, res) => {
 
   PuanDurumu.find(condition)
     .then(data => {
-       res.send(data);
+      let x = data.sort(function(a, b){return b.puan - a.puan})
+      res.send(x);
+      //  res.send(data);
       console.log(data)
     })
     .catch(err => {

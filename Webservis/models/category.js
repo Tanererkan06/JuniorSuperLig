@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 
 const categorySchema = new mongoose.Schema({
-
+   sehir: String,
    name: {
        type: String,
        trim: true,

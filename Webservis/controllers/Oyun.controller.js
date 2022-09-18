@@ -18,14 +18,16 @@ exports.create = (req, res) => {
 
   let oyun = new Oyun({
     adi: req.body.adi,
+    sehir: req.body.sehir,
     mactarihi: req.body.macTarihi,
     macsaati: req.body.macSaati,
-    il: req.body.il,
     yer: req.body.yer,
     takimbirid: req.body.takimBirId,
     takimbiradi: req.body.takimBirAdi,
+    takimbiresamelistesi: req.body.takimBirEsameListesi,
     takimikiid: req.body.takimIkiId,
     takimikiadi: req.body.takimIkiAdi,
+    takimikiesamelistesi: req.body.takimIkiEsameListesi,
     gozlemciid: req.body.gozlemciId,
     gozlemciadi: req.body.gozlemciAdi,
     ortahakem: req.body.ortaHakem,

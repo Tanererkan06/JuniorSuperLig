@@ -12,7 +12,7 @@ var mime = require('mime');
 const News = db.Newss;
 const User = require("../models/user.model");
 
-exports.create = (req, res) => { 
+  exports.create = (req, res) => { 
   console.log(req.headers);
  /*  if (!req.body) {
     res.status(400).send({ message: "Content can not be empty!" });
@@ -23,13 +23,13 @@ exports.create = (req, res) => {
     baslik:req.body.baslik,
     icerik:req.body.icerik,
     resim:req.body.resim,
+    sehir: req.body.sehir,
     kisaicerik:req.body.kisaIcerik,
     tarih:req.body.tarih,
     ulke: req.body.ulke,
     sehir: req.body.sehir,
     lig: req.body.lig,
     takimid: req.body.takimId,
-    desc: req.body.desc,
     published: req.body.published ? req.body.published : false,
     
   });  
@@ -47,7 +47,7 @@ exports.create = (req, res) => {
     });
 };
 
-exports.findAll = (req, res) => {
+  exports.findAll = (req, res) => {
   const baslik = req.query.baslik;
   //var condition = baslik ? { baslik: { $regex: new RegExp(baslik), $options: "i" } } : {};
 
@@ -65,7 +65,7 @@ exports.findAll = (req, res) => {
     });
 };
 
-exports.findOne = (req, res) => {
+  exports.findOne = (req, res) => {
   const id = req.params.id;
 
   News.findById(id)
@@ -83,7 +83,7 @@ exports.findOne = (req, res) => {
     });
 };
 
-exports.update = (req, res) => {
+  exports.update = (req, res) => {
   if (!req.body) {
     return res.status(400).send({
       message: "Data to update can not be empty!"
@@ -107,7 +107,7 @@ exports.update = (req, res) => {
     });
 };
 
-exports.delete = (req, res) => {
+  exports.delete = (req, res) => {
   const id = req.params.id;
 
   News.findByIdAndRemove(id, { useFindAndModify: false })
@@ -129,7 +129,7 @@ exports.delete = (req, res) => {
     });
 };
 
-exports.deleteAll = (req, res) => {
+  exports.deleteAll = (req, res) => {
     News.deleteMany({})
     .then(data => {
       res.send({
@@ -144,7 +144,7 @@ exports.deleteAll = (req, res) => {
     });
 };
 
-exports.findAllPublished = (req, res) => {
+  exports.findAllPublished = (req, res) => {
     News.find({ published: true })
     .then(data => {
        res.send(data);
@@ -158,7 +158,7 @@ exports.findAllPublished = (req, res) => {
     });
 };
 
-exports.timeline = async (req, res) => {
+  exports.timeline = async (req, res) => {
   try {
     const currentUser = await takims2.findById(req.body.takimId);
     const userPosts = await news2.find({ takimid: currentUser._id });

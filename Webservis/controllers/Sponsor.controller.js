@@ -17,9 +17,9 @@ exports.create = (req, res) => {
   } */
 
   let sponsor = new Sponsor({
-    sponsorid:req.body.sponsorId,
     sponsoradi:req.body.sponsorAdi,
-    sponsoril:req.body.sponsorIl,
+    sehir: req.body.sehir,
+    sponsorekleyenid: req.body.sponsorEkleyenId,
     sponsorkategori:req.body.sponsorKategori,
     sponsorreklami:req.body.sponsorReklami,
     sponsorluksuresi:req.body.sponsorlukSuresi,

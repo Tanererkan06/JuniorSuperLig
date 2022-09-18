@@ -51,11 +51,6 @@ const NewsSchema = new mongoose.Schema(
     lig: String,
     takimid: {
       type: String,
-      //required: true,
-    },
-    desc: {
-      type: String,
-      max: 500,
     },
     likes: {
       type: Array,
@@ -64,5 +59,9 @@ const NewsSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-
+NewsSchema.method("toJSON", function () {
+  const { __v, _id, ...object } = this.toObject();
+  object.id = _id;
+  return object;
+}); 
 module.exports = mongoose.model("News", NewsSchema);

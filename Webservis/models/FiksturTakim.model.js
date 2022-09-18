@@ -2,6 +2,7 @@
 module.exports = mongoose => {
     var schema = mongoose.Schema(
       {
+        sehir: String,
         ligid:String,
         takimid:String,
         IsDeleted:Boolean,

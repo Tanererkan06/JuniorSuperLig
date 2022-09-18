@@ -17,18 +17,13 @@ exports.create = (req, res) => {
   } */
 
   let fikstur = new Fikstur({
-    ligid:req.body.ligid,
-    baslangictarihi:req.body.baslangictarihi,
-    bitistarihi:req.body.bitistarihi,
-    aktiflig:req.body.aktiflig,
-    IsDeleted:req.body.IsDeleted,
-    pazartesi:req.body.pazartesi,
-    sali:req.body.sali,
-    carsamba:req.body.carsamba,
-    persembe:req.body.persembe,
-    cuma:req.body.cuma,
-    cumartesi:req.body.cumartesi,
-    pazar:req.body.pazar,
+    sehir: req.body.sehir,
+    ligid: req.body.ligId,
+    takimlar: req.body.takimlar,
+    baslangictarihi: req.body.baslangicTarihi,
+    bitistarihi: req.body.bitisTarihi,
+    eslesmeturu: req.body.eslesmeTuru,
+    eslesmeler: req.body.eslesmeler,
     published: req.body.published ? req.body.published : false,
   });  
 

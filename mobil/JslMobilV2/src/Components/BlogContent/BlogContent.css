@@ -1,0 +1,50 @@
+.blog-profile-image {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+.blog-content{
+    color: white;
+}
+.blog-category ul {
+    list-style: inside;
+}
+.blog-category ul li a{
+    color: white;
+}
+.mini-gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+.blogScroller {
+    height: 98vh;
+    overflow: scroll;
+}
+.blog-page-image{
+    position: relative;
+}
+.date{
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
+    background: rgb(255, 255, 255);
+    width: 30%;
+    color: black;
+    padding: 2%;
+}
+@media (min-width: 320px) and (max-width: 424px) {
+  .date{
+    width: 50%;
+}
+}
+@media (min-width: 425px) and (max-width: 575px) {
+  .date{
+    width: 50%;
+}
+}
+@media (min-width: 576px) and (max-width: 667px) {
+  .date{
+    width: 50%;
+}
+}

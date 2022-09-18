@@ -9,7 +9,7 @@ module.exports = mongoose => {
       //   type: Array,
       //   required: true,
       // },
-      
+      sehir: String,
       adi: String,
       published: Boolean
    /*     /*    img:

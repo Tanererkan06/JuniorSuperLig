@@ -40,6 +40,7 @@ exports.create = (req, res) => {
       hocaid:req.body.hocaId,
       hocaadi:req.body.hocaAdi,
       veli:req.body.veli,
+      sehir: req.body.sehir,
       telefon:req.body.telefon,
       adres:req.body.adres,
       eposta:req.body.eposta,

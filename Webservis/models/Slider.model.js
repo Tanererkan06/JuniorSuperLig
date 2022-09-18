@@ -7,6 +7,7 @@ module.exports = mongoose => {
         resimicerik:String,
         videobaslik:String,
         url:String,
+        sehir: String,
         veritipi:String,
         slidetipi:Boolean,
         published: Boolean, 

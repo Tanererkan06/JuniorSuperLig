@@ -19,7 +19,7 @@ exports.create = (req, res) => {
   let oyunKonum = new OyunKonum({
   
     konum:req.body.konum,
-    il:req.body.il,
+    sehir: req.body.sehir,
     sorumlu:req.body.sorumlu,
     sorumluiletisim:req.body.sorumluIletisim,
     adi:req.body.adi,

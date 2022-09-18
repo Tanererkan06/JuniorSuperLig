@@ -1,9 +1,11 @@
  module.exports = mongoose => {
   var schema = mongoose.Schema(
     {
-    sponsorid:Number,
+    sponsorekleyenid: String,
     sponsoradi:String,
-    sponsoril:String,
+    sehir:{
+      type: Array,
+    },
     sponsorkategori:String,
     sponsorreklami:String,
     // sponsorluksuresi:Number,

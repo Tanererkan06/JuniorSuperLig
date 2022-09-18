@@ -19,6 +19,7 @@ exports.create = (req, res) => {
   let fiksturTakim = new FiksturTakim({
     ligid:req.body.ligid,
     takimid:req.body.takimid,
+    sehir: req.body.sehir,
     IsDeleted:req.body.IsDeleted,
     published: req.body.published ? req.body.published : false,
   });  

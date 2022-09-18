@@ -14,6 +14,7 @@ module.exports = mongoose => {
       // takimid:Number,
       takimid:String,
       takimadi:String,
+      sehir: String,
       published: Boolean
    /*     /*    img:
       {

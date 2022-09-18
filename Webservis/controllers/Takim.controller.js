@@ -23,6 +23,7 @@ exports.create = (req, res) => {
       sorumlu:req.body.sorumlu,
       sorumluiletisim:req.body.sorumluIletisim,
       telefon:req.body.telefon,
+      veli: req.body.veli,
       eposta:req.body.eposta,
       sifre:req.body.sifre,
       adres:req.body.adres,

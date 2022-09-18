@@ -4,15 +4,14 @@
       ligid:String,
       ligadi:String,
       ulke:String,
-      sehir: 
-        {
-          type: Array,
-          required: true,
-        },
+      // sehir: 
+      //   {
+      //     type: Array,
+      //     required: true,
+      //   },
+      sehir: String,
       ilce:String,
       published: Boolean,
-      
-   
     },
     { timestamps: true }
   );

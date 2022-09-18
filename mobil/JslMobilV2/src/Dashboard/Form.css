@@ -1,0 +1,344 @@
+.inputcss {
+    height: 40px;
+    width: 50%;
+    display: flex;
+    padding-left: 5px;
+    border-radius: 4px;
+    border: 2px solid rgb(206, 212, 218);
+}
+ /* .formcss {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: grid;
+    gap: 1rem;
+    width: 747px;
+    margin-left: 230px;
+    margin-top: 53px;
+}  */
+
+.formcss-news {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: grid;
+    gap: 1rem;
+    width: 1000px;
+    margin-top: 53px;
+}
+
+.news-countries {
+    margin: 20px;
+    width: 400px;
+    border-radius: 0.5rem;
+}
+
+.news-countries-item {
+    width: 400px;
+}
+
+
+.labelcss {
+    color: rgb(68, 129, 235);
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* .div2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+} */
+.buttoncss {
+    width: 250px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out 0s;
+    outline: none;
+    background-image: linear-gradient(to right, rgb(37, 170, 225), rgb(68, 129, 235), rgb(4, 190, 254), rgb(63, 134, 237));
+    box-shadow: rgb(65 132 234 / 75%) 0px 4px 15px 0px;
+    text-transform: uppercase;
+    
+}
+.buttoncss-login {
+    width: 140px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 20px;
+    margin-left:50px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out 0s;
+    outline: none;
+    background-image: linear-gradient(to right, rgb(37, 170, 225), rgb(68, 129, 235), rgb(4, 190, 254), rgb(63, 134, 237));
+    box-shadow: rgb(65 132 234 / 75%) 0px 4px 15px 0px;
+    text-transform: uppercase;
+    
+}
+.buttoncss-signup-dogrula {
+    width: 180px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 20px;
+    margin-left:33px;
+    height: 26px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out 0s;
+    outline: none;
+    background-image: linear-gradient(to right, rgb(37, 170, 225), rgb(68, 129, 235), rgb(4, 190, 254), rgb(63, 134, 237));
+    box-shadow: rgb(65 132 234 / 75%) 0px 4px 15px 0px;
+    text-transform: uppercase;
+    margin-top: 1px;
+    
+}
+.buttoncss-signup-kayit {
+    width: 140px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 20px;
+    margin-left:173px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out 0s;
+    outline: none;
+    background-image: linear-gradient(to right, rgb(37, 170, 225), rgb(68, 129, 235), rgb(4, 190, 254), rgb(63, 134, 237));
+    box-shadow: rgb(65 132 234 / 75%) 0px 4px 15px 0px;
+    text-transform: uppercase;
+    
+}
+.buttondiv {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.maindiv
+{
+background-color: rgb(233, 236, 239);
+height: 100vh;
+display: flex;
+-webkit-box-pack: center;
+justify-content: center;
+}
+
+.buttoncss-atanan {
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 20px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out 0s;
+    outline: none;
+    background-image: linear-gradient(to right, rgb(37, 170, 225), rgb(68, 129, 235), rgb(4, 190, 254), rgb(63, 134, 237));
+    box-shadow: rgb(65 132 234 / 75%) 0px 4px 15px 0px;
+    text-transform: uppercase;
+    
+}
+
+.buttoncss-kontrol {
+    width: 300px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 20px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out 0s;
+    outline: none;
+    background-image: linear-gradient(to right, rgb(37, 170, 225), rgb(68, 129, 235), rgb(4, 190, 254), rgb(63, 134, 237));
+    box-shadow: rgb(65 132 234 / 75%) 0px 4px 15px 0px;
+    text-transform: uppercase;
+    
+}
+.buttoncss-fikstur-baslat {
+    width: 250px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 20px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out 0s;
+    outline: none;
+    background-image: linear-gradient(to right, rgb(37, 170, 225), rgb(68, 129, 235), rgb(4, 190, 254), rgb(63, 134, 237));
+    box-shadow: rgb(65 132 234 / 75%) 0px 4px 15px 0px;
+    text-transform: uppercase;
+    
+}
+.formcss-atanan {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 3.5rem;
+    display: grid;
+    gap: 1rem;
+    width: 400px;
+    height: 300px;
+    margin-left: 230px;
+    margin-top: 53px;
+    box-shadow: 3px 3px 4px #000;
+   -moz-box-shadow: 3px 3px 4px blue;
+   -webkit-box-shadow: 3px 3px 4px #428bca;
+}
+.header-atanan{
+    border-bottom-style: solid;
+    height: 50px;
+}
+.labelcss-atanan {
+    color: rgb(68, 129, 235);
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.labelcss-atanan-canli {
+    color: rgb(68, 129, 235);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+}
+.labelcss-skor-canli {
+    color: rgb(68, 129, 235);
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+}
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.buttoncss-canli {
+    width: 86px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 20px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out 0s;
+    outline: none;
+    background-image: linear-gradient(to right, rgb(37, 170, 225), rgb(68, 129, 235), rgb(4, 190, 254), rgb(63, 134, 237));
+    box-shadow: rgb(65 132 234 / 75%) 0px 4px 15px 0px;
+    text-transform: uppercase;
+    
+}
+.inputcss-canli {
+    height: 30px;
+    width: 50px;
+    display: flex;
+    padding-left: 5px;
+    border-radius: 4px;
+    border: 2px solid rgb(206, 212, 218);
+}
+.formcss-canli {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: grid;
+    gap: 1rem;
+    width: 900px;
+    margin-left: 230px;
+    margin-top: 53px;
+}
+.img-oyuncu {
+
+    width: 30px;
+  }
+  .canli-sol-takim{
+    width: "58.33333333%";
+    margin-top: -"30px";
+    margin-left: "149px"; 
+
+  }
+  .canli-sag-takim{
+
+    
+}
+.buttoncss-canli-red {
+    width: 86px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 20px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out 0s;
+    outline: none;
+    background-image: linear-gradient(to right, rgb(243, 45, 0), rgb(225, 13, 13), rgb(254, 4, 4), rgb(236, 14, 14));
+    box-shadow: rgb(65 132 234 / 75%) 0px 4px 15px 0px;
+    text-transform: uppercase;
+    
+}
+.labelcss-canli {
+    color: rgb(68, 129, 235);
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 16px;
+}
+
+.oyuncu-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    transition: 0.3s;
+    padding: 6px;
+    border-radius: 0.6rem;
+    margin-bottom: 10px !important;
+    /* width: 45%; */
+  }
+  
+.oyuncu-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

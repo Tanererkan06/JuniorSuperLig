@@ -11,14 +11,31 @@ const UserSchema = new mongoose.Schema(
     },
     email: {
       type: String,
-      required: true,
+      //required: true,
       max: 50,
       unique: true,
     },
     password: {
       type: String,
-      required: true,
+      //required: true,
       min: 6,
+    },
+    otp_vertify: {
+      type: String,
+      //required: true,
+      min: 6,
+    },
+    isim: {
+      type: String,
+      //required: true,
+    },
+    sehir: {
+      type: String,
+      //required: true,
+    },
+    telefon: {
+      type: String,
+      //required: true,
     },
     roles: [
       {
@@ -51,6 +68,10 @@ const UserSchema = new mongoose.Schema(
       max: 50,
     },
     city: {
+      type: String,
+      max: 50,
+    },
+    town: {
       type: String,
       max: 50,
     },

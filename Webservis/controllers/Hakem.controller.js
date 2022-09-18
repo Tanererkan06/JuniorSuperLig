@@ -23,6 +23,7 @@ exports.create = (req, res) => {
       eposta:req.body.eposta,
       sifre:req.body.sifre,
       adres:req.body.adres,
+      sehir: req.body.sehir,
       resim:req.body.resim,
       dogumtarihi:req.body.dogumTarihi,
       gosterdigisarikart:req.body.gosterdigiSariKart,

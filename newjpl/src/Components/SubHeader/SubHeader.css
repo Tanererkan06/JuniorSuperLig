@@ -1,0 +1,37 @@
+.subHeader {
+    background: #0d0d0d;
+    color: white;
+    padding: 5px 0;
+}
+span.sm-none {
+    display: inline-block;
+    margin-left: .6rem;
+}
+.sm-none2 {
+    display: inline-block;
+}
+@media (min-width: 320px) and (max-width: 424px) {
+    span.sm-none {
+        display: none;
+    }
+    .sm-none2 {
+        display: none;
+    }
+}
+@media (min-width: 425px) and (max-width: 575px) {
+    span.sm-none {
+        display: none;
+    }
+    .sm-none2 {
+        display: none;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    span.sm-none {
+        display: none;
+    }
+    .sm-none2 {
+        display: none;
+    }
+}
+

@@ -3,18 +3,12 @@
     {
       adi:String,
       konum:String,
-      il:String,
-      // takimid:Number,
+      sehir:String,
       takimid:String,
       takimadi:String,
       sorumlu:String,
       sorumluiletisim:Number,
-      published: Boolean
-   /*     /*    img:
-      {
-        data: Buffer,
-        contentType: String
-      }, */   
+      published: Boolean 
     },
     { timestamps: true }
   );

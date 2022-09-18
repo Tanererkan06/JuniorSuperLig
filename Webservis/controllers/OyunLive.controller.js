@@ -21,7 +21,8 @@ exports.create = (req, res) => {
     adi:req.body.adi,
     mactarihi:req.body.mactarihi,
     macsaati:req.body.macsaati,
-    il:req.body.il,
+    sehir: req.body.sehir,
+    lig: req.body.lig,
     yer:req.body.yer,
     takimbirid:req.body.takimbirid,
     takimbiradi:req.body.takimbiradi,
@@ -80,7 +81,7 @@ exports.findAll = (req, res) => {
     });
 };
 
-exports.findOne = (req, res) => {
+  exports.findOne = (req, res) => {
   const id = req.params.id;
 
   OyunLive.findById(id)
@@ -97,7 +98,7 @@ exports.findOne = (req, res) => {
     });
 };
 
-exports.update = (req, res) => {
+  exports.update = (req, res) => {
   if (!req.body) {
     return res.status(400).send({
       message: "Data to update can not be empty!"
@@ -121,7 +122,7 @@ exports.update = (req, res) => {
     });
 };
 
-exports.delete = (req, res) => {
+  exports.delete = (req, res) => {
   const id = req.params.id;
 
   OyunLive.findByIdAndRemove(id, { useFindAndModify: false })

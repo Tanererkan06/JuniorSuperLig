@@ -1,6 +1,7 @@
 module.exports = mongoose => {
     var schema = mongoose.Schema(
       {
+        sehir: String,
         reklamveren:String,
         resim:String,
         tarih:Date,

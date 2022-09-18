@@ -17,6 +17,7 @@ exports.create = (req, res) => {
   } */
 
   const bannerReklam = new BannerReklam({
+    sehir: req.body.sehir,
     reklamveren:req.body.reklamveren,
     resim:req.body.resim,
     tarih:req.body.tarih,

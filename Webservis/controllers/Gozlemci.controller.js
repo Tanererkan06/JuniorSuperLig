@@ -38,6 +38,7 @@ const Gozlemci = db.Gozlemcis;
 exports.create = (req, res) => {    
      const gozlemci = new Gozlemci({
       adi: req.body.adi,
+      sehir: req.body.sehir,
       // oyunliveid:req.body.oyunLiveId,
       published: req.body.published ? req.body.published : false,
     });   

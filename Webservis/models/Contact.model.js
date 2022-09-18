@@ -2,10 +2,11 @@ module.exports = mongoose => {
     var schema = mongoose.Schema(
       {
         iletisimadres:String,
-        iletisimnumber:Number,
+        iletisimnumber:String,
         iletisimeposta:String,
         harita:Number,
         isim:String,
+        sehir: String,
         telefon:String,
         eposta:String,
         konu:String,

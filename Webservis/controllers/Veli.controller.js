@@ -20,6 +20,7 @@ exports.create = (req, res) => {
 
   let veli = new Veli({
     uyruk:req.body.uyruk,
+    sehir: req.body.sehir,
     oyuncuid:req.body.oyuncuId,
     oyuncuadi:req.body.oyuncuAdi,
     adi:req.body.adi,

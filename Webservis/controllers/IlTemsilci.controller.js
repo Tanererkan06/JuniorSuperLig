@@ -11,6 +11,7 @@ const IlTemsilci = db.IlTemsilcisis;
 exports.create = (req, res) => { 
      const ilTemsilci = new IlTemsilci({
       adi:req.body.adi,
+      sehir: req.body.sehir,
       published: req.body.published ? req.body.published : false,
     });   
   

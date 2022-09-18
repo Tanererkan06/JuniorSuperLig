@@ -6,7 +6,7 @@
       telefon:Number,
       eposta:String,
       resim:String,
-      // oyuncuid:Number,
+      sehir: String,
       oyuncuid:String,
       oyuncuadi:String,
       sifre:Number,
