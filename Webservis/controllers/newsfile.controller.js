@@ -5,7 +5,7 @@ const db = require("../models");
 
 const uploadFile = require("../middleware/newsupload");
 const fs = require("fs");
- const baseUrl =  "http://localhost:8000/resources/static/assets/haberresim/";
+ const baseUrl =  "https://api.juniorsuperlig.com/resources/static/assets/haberresim/";
  
  
 const path = require("path");

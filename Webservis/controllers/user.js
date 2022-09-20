@@ -91,8 +91,8 @@ exports.logout = (req, res, next)=>{
  
 exports.gozculistesi = (req, res, next)=>{
 
-    const gozcu ="6314995711bed2acdb4e2fae";
-//server resetlenirse bu id'yi güncellenen yeni gozcu id'sine göre değiştir.
+    const gozcu ="63230a0e5406eb0e03f07286";
+  //server resetlenirse bu id'yi güncellenen yeni gozcu id'sine göre değiştir.
     
    User.find(
     {
@@ -114,7 +114,7 @@ exports.gozculistesi = (req, res, next)=>{
 
 exports.velilistesi = (req, res, next)=>{
 
-  const veli ="6314995711bed2acdb4e2faf";
+  const veli ="63230a0e5406eb0e03f07287";
 //server resetlenirse bu id'yi güncellenen yeni veli id'sine göre değiştir.
   
  User.find(
@@ -131,6 +131,29 @@ exports.velilistesi = (req, res, next)=>{
      res.status(500).send({
        message:
          err.message || "Some error occurred while retrieving velis."
+     });
+   }); 
+}
+
+exports.antrenorlistesi = (req, res, next)=>{
+
+  const antrenor ="63230a0e5406eb0e03f0728b";
+//server resetlenirse bu id'yi güncellenen yeni veli id'sine göre değiştir.
+  
+ User.find(
+  {
+      roles:antrenor
+  }
+ )
+
+   .then(data => {
+      res.send(data);
+     console.log(data)
+   })
+   .catch(err => {
+     res.status(500).send({
+       message:
+         err.message || "Some error occurred while retrieving antrenors."
      });
    }); 
 }

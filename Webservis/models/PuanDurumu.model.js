@@ -5,7 +5,7 @@
       sehir: String,
       lig:Number,
       ligadi:String,
-      takimid:Number,
+      takimid:String,
       takimadi:String,
       oynananoyun:Number,
       galibiyet:Number,

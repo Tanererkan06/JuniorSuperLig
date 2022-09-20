@@ -5,7 +5,7 @@ const db = require("../models");
 
 const uploadFile = require("../middleware/bannerupload");
 const fs = require("fs");
- const baseUrl =  "http://localhost:8000/resources/static/assets/banner/";
+ const baseUrl =  "https://api.juniorsuperlig.com/resources/static/assets/banner/";
  
  
 const path = require("path");

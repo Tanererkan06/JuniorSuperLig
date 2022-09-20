@@ -23,6 +23,7 @@ module.exports = function (app) {
   app.get("/api/test/allusers", User.findAll);
   app.get("/api/test/tumgozculer", User.gozculistesi);
   app.get("/api/test/tumveliler", User.velilistesi);
+  app.get("/api/test/tumantrenorhocalar", User.antrenorlistesi);
   app.get("/api/test/:id", User.findOne);
 
   app.get(
@@ -42,7 +43,7 @@ module.exports = function (app) {
        axios.post('http://sms.verimor.com.tr/v2/send.json', {
         username: '908502422501',
         password: 'JUNIORSUPERLIG2023',
-        source_addr: 'JR SUPERLIG',
+        //source_addr: '08502422501',
         valid_for: '00:03',
         // send_at: tarih,
         custom_id: '123456789',

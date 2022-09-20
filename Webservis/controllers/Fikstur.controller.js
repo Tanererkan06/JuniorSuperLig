@@ -19,6 +19,7 @@ exports.create = (req, res) => {
   let fikstur = new Fikstur({
     sehir: req.body.sehir,
     ligid: req.body.ligId,
+    ligadi: req.body.ligAdi,
     takimlar: req.body.takimlar,
     baslangictarihi: req.body.baslangicTarihi,
     bitistarihi: req.body.bitisTarihi,

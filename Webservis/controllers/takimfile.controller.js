@@ -5,7 +5,7 @@ const db = require("../models");
 
 const uploadFile = require("../middleware/Takımresimupload");
 const fs = require("fs");
- const baseUrl =  "http://localhost:8000/resources/static/assets/Takımresim/";
+ const baseUrl =  "https://api.juniorsuperlig.com/resources/static/assets/Takımresim/";
  
  
 const path = require("path");

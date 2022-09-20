@@ -5,7 +5,7 @@ const db = require("../models");
 
 const uploadFile = require("../middleware/sliderupload");
 const fs = require("fs");
- const baseUrl =  "http://localhost:8000/resources/static/assets/slider/";
+ const baseUrl =  "https://api.juniorsuperlig.com/resources/static/assets/slider/";
  
 const path = require("path");
  

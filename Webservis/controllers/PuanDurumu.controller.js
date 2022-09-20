@@ -24,11 +24,11 @@ exports.create = (req, res) => {
     takimadi:req.body.takimAdi,
     oynananoyun:req.body.oynananOyun,
     galibiyet:req.body.galibiyet,
-    malubiyet:req.body.maglubiyet,
+    malubiyet:req.body.malubiyet,
     beraberlik:req.body.beraberlik,
     attigigol:req.body.attigiGol,
     yedigigol:req.body.yedigiGol,
-    avaraj:req.body.averaj,
+    avaraj:req.body.avaraj,
     puan:req.body.puan,
     published: req.body.published ? req.body.published : false,
     

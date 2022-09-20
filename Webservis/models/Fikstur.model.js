@@ -4,6 +4,7 @@ module.exports = mongoose => {
     {
       sehir: String,
       ligid:String,
+      ligadi: String,
       takimlar: Array,
       baslangictarihi:Date,
       bitistarihi:Date,

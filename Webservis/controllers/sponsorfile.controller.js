@@ -5,14 +5,10 @@ const db = require("../models");
 
 const uploadFile = require("../middleware/sponsorupload");
 const fs = require("fs");
- const baseUrl =  "http://localhost:8000/resources/static/assets/Sponsorresim/";
- 
- 
+const baseUrl =  "https://api.juniorsuperlig.com/resources/static/assets/Sponsorresim/";
 const path = require("path");
  
 const upload = async (req, res) => {
- 
-
   try {
     await uploadFile(req, res);
 

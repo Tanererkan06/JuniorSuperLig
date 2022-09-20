@@ -30,7 +30,7 @@ global.__basedir = __dirname;
 
 var corsOptions = {
   // origin: "http://www.juniorsuperlig.com"
-  origin: "http://localhost:3000"
+  origin: "*"
 };
 
 /* const io = new Server(server, {
@@ -60,7 +60,7 @@ app.use(express.json());
 
 app.use(function (req, res, next) {
   // res.header("Access-Control-Allow-Origin", "http://www.juniorsuperlig.com"); // update to match the domain you will make the reques>
-  res.header("Access-Control-Allow-Origin", "http://localhost:3000"); // update to match the domain you will make the reques>
+  res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the reques>
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
   if (req.method === 'OPTIONS') {

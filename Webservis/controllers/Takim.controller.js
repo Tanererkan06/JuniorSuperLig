@@ -126,6 +126,16 @@ exports.delete = (req, res) => {
     });
 };
 
+exports.tekGuncelle = async (req, res) => {
+  const user = await Takim.findById(req.params.id);
+  await user.updateOne({ $push: { veli: req.body.data }});
+}
+
+exports.tekGuncelle2 = async (req, res) => {
+  const user = await Takim.findById(req.params.id);
+  await user.updateOne({ $push: { oyuncular: req.body.data }});
+}
+
 exports.deleteAll = (req, res) => {
     Takim.deleteMany({})
     .then(data => {

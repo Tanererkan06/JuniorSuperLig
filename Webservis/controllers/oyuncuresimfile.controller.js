@@ -5,7 +5,7 @@ const db = require("../models");
 
 const uploadFile = require("../middleware/oyuncuupload");
 const fs = require("fs");
- const baseUrl =  "http://localhost:8000/resources/static/assets/oyuncuresim/";
+ const baseUrl =  "https://api.juniorsuperlig.com/resources/static/assets/oyuncuresim/";
  
  
 const path = require("path");
